@@ -1,0 +1,55 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /MENUES
+
+spring:
+  profiles:
+    active: test
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: create-drop
+  logging:
+    level:
+      org:
+        hibernate:
+          SQL: debug
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: "dev"
+  datasource:
+    url: jdbc:postgresql://192.168.1.100:5432/menu_dev
+    username: calamardo
+    password: mla
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+  datasource:
+    url: jdbc:postgresql://192.168.1.100:5432/menu_prod
+    username: calamardo
+    password: mla
+
+---
+    spring:
+      config:
+        activate:
+          on-profile: "test"
+      datasource:
+        url: jdbc:postgresql://192.168.1.100:5432/menu_test
+        username: calamardo
+        password: mla
+
