@@ -1,10 +1,8 @@
-package com.mavtechsa.menuondemand.dominio.model;
+package com.mavtechsa.menuondemand.domain.model;
 
-import com.mavtechsa.menuondemand.dominio.model.enums.MenuTipo;
+import com.mavtechsa.menuondemand.domain.model.enums.MenuTipo;
 import jakarta.persistence.*;
 import lombok.Data;
-
-import java.util.List;
 
 @Entity
 @Data
@@ -18,15 +16,9 @@ public class Menu {
     @Enumerated(EnumType.STRING)
     private MenuTipo tipoMenu;
 
-    @OneToMany(mappedBy = "menu")
-    private List<Ingredientes> ingredientes;
-
-    @ManyToOne
-    @JoinColumn(name = "id_orden")
-    private OrdenDelDia orden;
-
     private boolean estado;
 
+    private boolean eliminado;
 
     }
 

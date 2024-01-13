@@ -1,0 +1,128 @@
+[
+    {
+      "nombreYapellido": "Ana Rodríguez",
+      "cel": 555123456,
+      "email": "ana.rodriguez@gmail.com",
+      "direccion": "Rambla Sur 4321",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Luis Fernández",
+      "cel": 333987654,
+      "email": "luis.fernandez@hotmail.com",
+      "direccion": "Avenida Italia 6789",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Laura Martínez",
+      "cel": 444567890,
+      "email": "laura.martinez@yahoo.com",
+      "direccion": "Gral. Flores 5432",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Carlos Sánchez",
+      "cel": 666234567,
+      "email": "carlos.sanchez@gmail.com",
+      "direccion": "Bvar. Artigas 9876",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Gabriela Gómez",
+      "cel": 222876543,
+      "email": "gabriela.gomez@hotmail.com",
+      "direccion": "Paysandú 1234",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Ricardo Rodríguez",
+      "cel": 777345678,
+      "email": "ricardo.rodriguez@yahoo.com",
+      "direccion": "Maldonado 5678",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Florencia Pérez",
+      "cel": 999012345,
+      "email": "florencia.perez@gmail.com",
+      "direccion": "Soriano 8765",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Martín Silva",
+      "cel": 888654321,
+      "email": "martin.silva@hotmail.com",
+      "direccion": "Colonia 2345",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Valentina López",
+      "cel": 111234567,
+      "email": "valentina.lopez@yahoo.com",
+      "direccion": "Tacuarembó 876",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Jorge García",
+      "cel": 555876543,
+      "email": "jorge.garcia@gmail.com",
+      "direccion": "Rocha 567",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Paola Méndez",
+      "cel": 777345678,
+      "email": "paola.mendez@hotmail.com",
+      "direccion": "Treinta y Tres 876",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Hernán Pereira",
+      "cel": 333012345,
+      "email": "hernan.pereira@yahoo.com",
+      "direccion": "Durazno 2345",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Romina González",
+      "cel": 444654321,
+      "email": "romina.gonzalez@gmail.com",
+      "direccion": "Salto 876",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Diego Vázquez",
+      "cel": 666234567,
+      "email": "diego.vazquez@hotmail.com",
+      "direccion": "Flores 567",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Silvina Castro",
+      "cel": 222876543,
+      "email": "silvina.castro@yahoo.com",
+      "direccion": "Cerro Largo 1234",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Gustavo Lima",
+      "cel": 777345678,
+      "email": "gustavo.lima@gmail.com",
+      "direccion": "Lavalleja 5678",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Lucía Pereyra",
+      "cel": 999012345,
+      "email": "lucia.pereyra@hotmail.com",
+      "direccion": "San José 8765",
+      "eliminado": false
+    },
+    {
+      "nombreYapellido": "Andrés Rodríguez",
+      "cel": 888654321,
+      "email": "andres.rodriguez@yahoo.com",
+      "direccion": "Artigas 2345",
+      "eliminado": false
+    }
+  ]

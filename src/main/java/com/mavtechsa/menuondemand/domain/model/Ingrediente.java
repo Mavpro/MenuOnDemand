@@ -1,10 +1,10 @@
-package com.mavtechsa.menuondemand.dominio.model;
+package com.mavtechsa.menuondemand.domain.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
 @Entity
 @Data
-public class Ingredientes {
+public class Ingrediente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_ingrediente;
@@ -13,12 +13,9 @@ public class Ingredientes {
 
     private String Nombre;
 
-    @ManyToOne
-    @JoinColumn(name = "id_menu")
-    private Menu menu;
-
-
     private Boolean estado;
+
+    private boolean eliminado;
 
 }
 
