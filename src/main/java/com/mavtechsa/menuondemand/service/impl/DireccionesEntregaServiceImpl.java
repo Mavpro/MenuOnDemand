@@ -75,4 +75,10 @@ public class DireccionesEntregaServiceImpl implements DireccionesEntregaService 
         return direccionesEntregaRepository.existsByDireccion(direccion);
     }
 
+    @Override
+    public void asignarDireccion(DireccionesEntrega direccion,Cliente cliente) {
+       direccion.setCliente(cliente);
+       direccionesEntregaRepository.save(direccion);
+
+    }
 }

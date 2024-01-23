@@ -22,7 +22,9 @@ public class Cliente {
 
     private String direccion;
 
-    @OneToMany(mappedBy = "cliente")
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
+    @JsonIgnore
+
     private List<DireccionesEntrega> direccionesEntrega;
 
     private boolean eliminado;

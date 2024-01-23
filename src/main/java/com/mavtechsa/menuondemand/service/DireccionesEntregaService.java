@@ -15,10 +15,11 @@ public interface DireccionesEntregaService {
     DireccionesEntregaDTO actualizarDireccionEntrega(DireccionesEntregaDTO direccionEntrega, Long id_direccion);
     List<DireccionesEntregaDTO> obtenerTodasLasDireccionesEntregaDeCliente(Long id_cliente);
     Optional<DireccionesEntregaDTO> obtenerDireccionEntregaActiva(Cliente cliente);
-    void eliminarDireccionEntrega(Long id_direccion);
+    public void asignarDireccion(DireccionesEntrega direccion,Cliente cliente);
+    void eliminarDireccionEntrega (Long id_direccion);
     boolean existByDireccion (String direccion);
 
 
+    }
 
 
-}

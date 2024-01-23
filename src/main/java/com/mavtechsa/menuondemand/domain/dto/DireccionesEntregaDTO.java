@@ -15,8 +15,7 @@ import lombok.*;
 public class DireccionesEntregaDTO {
 
     private Long id_direccion;
-    @JsonIgnore
-    private Cliente cliente;
+    private Long id_cliente;
     private String direccion;
     private boolean activa;
     private boolean eliminado;

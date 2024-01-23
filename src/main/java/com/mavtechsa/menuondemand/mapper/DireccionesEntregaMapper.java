@@ -16,10 +16,19 @@ import java.util.stream.Collectors;
 
 @Mapper(componentModel = "spring")
 public interface DireccionesEntregaMapper {
+
     DireccionesEntregaMapper INSTANCE = Mappers.getMapper(DireccionesEntregaMapper.class);
+    @Mapping(source = "id_direccion" ,target = "id_direccion")
 
+    @Mapping(source = "id_cliente" ,target = "cliente.id_cliente")
 
-    DireccionesEntrega toDireccionesEntrega(DireccionesEntregaDTO direccionesEntregaDTO);
-    DireccionesEntregaDTO toDireccionesEntregaDTO(DireccionesEntrega direccionesEntrega);
+    DireccionesEntrega toDireccionesEntrega(DireccionesEntregaDTO direccionEntregaDTO);
+    @Mapping(source = "id_direccion" ,target = "id_direccion")
+
+    @Mapping(source = "cliente.id_cliente" ,target = "id_cliente")
+
+    DireccionesEntregaDTO toDireccionesEntregaDTO(DireccionesEntrega direccionEntrega);
+
+    List<DireccionesEntregaDTO> toDireccionDtoList(List<DireccionesEntrega> direccionesEntrega);
 
 }

@@ -9,6 +9,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
+import java.lang.annotation.Target;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -17,9 +18,14 @@ import java.util.stream.Collectors;
 public interface ClienteMapper {
 
     ClienteMapper INSTANCE = Mappers.getMapper(ClienteMapper.class);
+    @Mapping(source = "id_cliente" ,target = "id_cliente")
 
     Cliente toCliente(ClienteDTO clienteDTO);
+    @Mapping(source = "id_cliente" ,target = "id_cliente")
 
     ClienteDTO toClienteDTO(Cliente cliente);
+
+    List<ClienteDTO> toClienteDtoList(List<Cliente> clientes);
+
 
 }
